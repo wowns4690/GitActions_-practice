@@ -43,10 +43,10 @@ jobs:
 
       - name: Run tests
         run: pytest
-        
+
       - name: Run integration tests
         run: |
-            python client.py
+            python src/client.py
         env:
             POSTGRES_HOST: localhost
             POSTGRES_PORT: 5432
